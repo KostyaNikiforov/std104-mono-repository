@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+
+body {
+    margin: 0;
+    height: 200vh;
+    background: black;
+    animation: bgFlash 1s infinite alternate;
+}
+
+@keyframes bgFlash {
+    0% {
+        background: red;
+    }
+
+    25% {
+        background: yellow;
+    }
+
+    50% {
+        background: lime;
+    }
+
+    75% {
+        background: cyan;
+    }
+
+    100% {
+        background: magenta;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    animation: spin 2s infinite linear, shake 0.2s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(5px, -5px);
+    }
+
+    50% {
+        transform: translate(-5px, 5px);
+    }
+
+    75% {
+        transform: translate(5px, 5px);
+    }
+
+    100% {
+        transform: translate(-5px, -5px);
+    }
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: inline-block;
+    background: blue;
+    animation: crazyMove 3s infinite alternate, colorShift 0.5s infinite;
+}
+
+@keyframes crazyMove {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: translate(200px, 50px) rotate(180deg) scale(0.5);
+    }
+
+    100% {
+        transform: translate(-200px, -50px) rotate(360deg) scale(2);
+    }
+}
+
+@keyframes colorShift {
+    0% {
+        background: red;
+    }
+
+    20% {
+        background: orange;
+    }
+
+    40% {
+        background: yellow;
+    }
+
+    60% {
+        background: green;
+    }
+
+    80% {
+        background: blue;
+    }
+
+    100% {
+        background: purple;
+    }
+}
+
+.box:hover {
+    transform: scale(3) rotate(720deg);
+    background: white;
+}
+
+.floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 80%;
+        left: 10%;
+    }
+
+    50% {
+        top: 40%;
+        left: 80%;
+    }
+
+    75% {
+        top: 10%;
+        left: 50%;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex div {
+    flex-grow: 1;
+    height: 100px;
+    animation: skewing 0.3s infinite alternate;
+}
+
+@keyframes skewing {
+    from {
+        transform: skew(0deg);
+    }
+
+    to {
+        transform: skew(40deg);
+    }
+}
+
+p {
+    font-size: 40px;
+    animation: blink 0.1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        animation: bgFlash 0.2s infinite;
+    }
+
+    .box {
+        animation-duration: 0.2s;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 10px;
+    }
+
+    * {
+        animation-duration: 0.05s !important;
+    }
+}
