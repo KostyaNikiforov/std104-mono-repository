@@ -1,0 +1,36 @@
+.cards {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    width: 400px;
+    height: max-content;
+
+
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 18px;
+    padding: 12px 16px;
+    border-radius: 16px;
+
+    .card__image {
+        width: 100%;;
+    }
+
+    transition: background-color 0.2s ease-out;
+}
+
+.card--active {
+    background-color: lightblue;
+}
+
+h2 {
+    margin: 12px 0;
+}
