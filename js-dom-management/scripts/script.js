@@ -79,8 +79,16 @@ cards.sort((a, b) => b.title.localeCompare(a.title));
 console.log("Sorted cards: ", cards);
 
 cards.filter(card => card.title.includes("RS")).forEach(card => {
-    console.log("Card with RS in title: ", card);
+    console.log("Card with 'RS' in title: ", card);
 });
 
 console.log("Array with only titles: ", cards.map(card => card.title));
 
+
+const class1 = {
+    func1: () => {
+        console.log("Function 1");
+    }
+}
+
+class1.func1();
