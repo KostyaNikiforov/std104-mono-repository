@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Product A — Linen tote",
+    "price": 20,
+    "imageUrl": "images/product-a.svg",
+    "description": "A lightweight linen tote for daily errands. Reinforced handles and an interior pocket for keys or a phone."
+  },
+  {
+    "id": 2,
+    "title": "Product B — Ceramic mug",
+    "price": 30,
+    "imageUrl": "images/product-b.svg",
+    "description": "Hand-glazed ceramic mug with a comfortable grip. Microwave-safe; we recommend hand washing to preserve the finish."
+  },
+  {
+    "id": 3,
+    "title": "Product C — Desk lamp",
+    "price": 45,
+    "imageUrl": "images/product-c.svg",
+    "description": "Adjustable LED desk lamp with warm and cool modes. Stable base and a small footprint for compact workspaces."
+  },
+  {
+    "id": 4,
+    "title": "Product D — Wool throw",
+    "price": 55,
+    "imageUrl": "images/product-d.svg",
+    "description": "Soft merino-blend throw for sofas and beds. Breathable enough for year-round use in most climates."
+  }
+]

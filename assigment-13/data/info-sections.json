@@ -1,0 +1,16 @@
+{
+  "infoSections": [
+    {
+      "title": "Our values",
+      "content": "We believe in quality materials, fair pricing, and honest descriptions. Every item is chosen to last beyond a single season."
+    },
+    {
+      "title": "Shipping",
+      "content": "We ship worldwide. Standard delivery is 5–7 business days; express options are available at checkout."
+    },
+    {
+      "title": "Returns",
+      "content": "Changed your mind? Unused items in original packaging can be returned within 30 days for a full refund."
+    }
+  ]
+}

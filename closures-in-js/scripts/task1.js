@@ -56,6 +56,6 @@ function getCalculation(type) {
     } else if (type === 'perimeter') {
         return calculatePerimeter;
     } else {
-        return null;
+        throw new Error("Unknown calculation type");
     }
 }

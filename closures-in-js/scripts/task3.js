@@ -18,10 +18,16 @@ console.log(`Greet user with ${user1.name}: `);
 
 user1.sayHi(); // Alice
 
+const f = [2, 3];
+
+document.querySelectorAll('section.special').forEach(section => {
+
+console.log(f);
+
 const user2 = {
     name: "Bob",
     sayHi: () => {
-        console.log(`Hello from, ${this.name}!`);
+        console.log(`Hello from, ${this}!`);
     }
 }
 

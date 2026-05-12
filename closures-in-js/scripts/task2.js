@@ -1,8 +1,8 @@
 console.log("Task 2");
 
-
 function createCounter(start = 0) {
     var count = start;
+    
     return () => { 
         count++;
         return count;
